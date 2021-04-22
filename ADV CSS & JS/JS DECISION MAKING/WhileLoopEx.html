@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function loop(){
+                var x=document.getElementById("para");
+                var n=document.getElementById("num").value;
+                var d=parseInt(n);
+                var data="";
+                var a=1;
+                while(a<=d){
+                    data += "Hello ";
+                    a++;
+                }
+                x.innerHTML=data;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Loop EXAMPLE</h1>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <button onclick="loop()">GO</button>
+        <p id='para'></p>
+    </body>
+    
+</html>

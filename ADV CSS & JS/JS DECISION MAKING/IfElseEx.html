@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function evenOdd(){
+                var a=document.getElementById("num");
+                var b=document.getElementById("para");
+                var c=parseInt(a.value);
+                if( (c%2)==0 ){
+                    b.innerHTML= c+" is even.";
+                }else{
+                    b.innerHTML= c+" is odd.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Find no. is even or odd!</h1>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <button onclick="evenOdd()">FIND</button>
+        <p id='para'></p>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function f1(){
+                var x=document.getElementById('para1');
+                x.innerHTML="hi Incapp";
+            }
+            function f2(){
+                var x=document.getElementById('para2');
+                var y=document.getElementById('xyz').value;
+                x.innerHTML=y; //to get whole text 
+                //x.innerHTML=y.charAt(y.length-1); //to get last character
+                //x.innerHTML=y.split("").reverse().join(""); //to reverse string
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Key Event example:</h1>
+        <input id='xyz' type="text" onkeydown="f1()" onkeyup="f2()"/>
+        <p id='para1'></p>
+        <p id='para2'></p>
+    </body>
+</html>

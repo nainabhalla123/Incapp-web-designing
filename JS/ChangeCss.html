@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <style>
+            p{
+                background-color: blue;
+                color: white;
+                width: max-content;
+                padding: 20px;
+            }
+        </style>
+        <script>
+            function f1(){
+                var x=document.getElementById('para');
+                x.style.backgroundColor='red';
+                x.style.padding='30px';
+            }
+            function f2(){
+                var x=document.getElementById('para');
+                x.style.backgroundColor="white";
+                x.style.color="black";
+                x.style.padding="0px";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id='h1'>Change css example:</h1>
+        <p id='para'>I love my INDIA</p>
+        <button onclick="f1()">click me 1</button>
+        <button onclick="f2()">click me 2</button>
+    </body>
+</html>

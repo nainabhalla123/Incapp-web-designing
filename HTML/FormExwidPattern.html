@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to my Page</h1>
+        <hr>
+        <form action="First.html" method="post">
+            <label>Name: </label> 
+            <input type="text" pattern="[a-z A-Z]+" minlength="3" name="username" placeholder="your name" required/>
+            <label>(Only alphabets and space allowed)</label>
+            <br/><br/>
+            <label>Password: </label> 
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" maxlength="6"  name="userpassword" placeholder="your password" required/>
+            <label>(Atleast one small letter and one capital letter and one digit)</label>
+            <br/><br/>
+            <input type="submit" value="GO"/>
+            <input type="reset" value="Clear"/>
+        </form>
+    </body>
+</html>

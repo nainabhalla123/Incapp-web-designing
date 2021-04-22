@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to my Page.</h1>
+        <hr/>
+        <h2>Enter your details:</h2>
+        <form action="" >
+            <label>Country: </label>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>Nepal</option>
+                <option>Japan</option>
+            </select>
+            <br/><br/>
+            <label>Address: </label>
+            <textarea rows="3" name="address" placeholder="enter address" required >jytjytjytj </textarea>
+            <br/><br/>
+            <label>Search: </label>
+            <input type="search" name="content" placeholder="type something to seacrh" required/>
+            <br/><br/>
+            <label>File: </label>
+            <input type="file" accept=".html,.jpg" name="file" required/>
+            <br/><br/>
+            <label>Skills: </label>
+            <span>Singing</span><input type="checkbox" name="skills" checked />
+            <span>Dancing</span><input type="checkbox" name="skills"  />
+            <br/><br/>
+            <label>Gender: </label>
+            <span>Male</span><input type="radio" name="gender" checked required/>
+            <span>FeMale</span><input type="radio" name="gender" required/>
+            <br/><br/>
+            <label>Week: </label>
+            <input type="week" name="week" required/>
+            <br/><br/>
+            <label>Month: </label>
+            <input type="month" name="month" required/>
+            <br/><br/>
+            <label>Time: </label>
+            <input type="time" name="time" required/>
+            <br/><br/>
+            <label>DOB: </label>
+            <input type="date" name="dob" required/>
+            <br/><br/>
+            <label>URL: </label>
+            <input type="url" maxlength="20" minlength="10" name="url" placeholder="enter your website" required/>
+            <br/><br/>
+            <label>Phone: </label>
+            <input type="tel" maxlength="10" minlength="10" name="phone" placeholder="enter your phone" required/>
+            <br/><br/>
+            <label>Color: </label>
+            <input type="color" name="color" required/>
+            <br/><br/>
+            <label>Range: </label>
+            <input type="range" name="range" required/>
+            <br/><br/>
+            <label>Password: </label>
+            <input type="password" maxlength="8" minlength="3" name="password" placeholder="enter your password" required/>
+            <br/><br/>
+            <label>Name: </label>
+            <input type="text" maxlength="20" minlength="3" name="name" value="rahul" placeholder="enter your name" required/>
+            <br/><br/>
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="enter your email id" required/>
+                <span style="color:red"><sup>*</sup></span>
+            <br/><br/>
+            <label>Age: </label>
+            <input type="number" max="60" min="20" name="age" placeholder="enter your age" required/>
+            <br/><br/>
+            <!-- <input type="image" src="arrow.jpg" width="50px" height="50px"/> -->
+            <input type="submit" value="GO"/> 
+            <input type="reset" value="Clean"/>
+
+            <button type="submit">GO</button>
+            <button type="reset">CLEAN</button> 
+        </form>
+    </body>
+</html>

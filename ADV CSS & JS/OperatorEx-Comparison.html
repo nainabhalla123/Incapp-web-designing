@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <p id='para'></p>
+    </body>
+    <script>
+        // relational operator
+        var data=10<12;//true
+        var data=10>12;//false
+        var data=10==12;//false
+        var data=10!=10;//false
+        var data=10<=10;//true
+        var data=10>=10;//true
+        var data="10"==10;//true
+        var data="10"===10;//false
+        var data=10===10;//true
+        var data="8"!=8;//false
+        var data="8"!==8;//true
+        var data=8!==8;//false
+        
+        // logical operator
+        //true && true -> true
+        //true && false -> false
+        //false && true -> false
+        //false && false -> false
+        var data=10<12 && 50>6;//true
+        var data=10>12 && 50>6;//false
+
+        //true || true -> true
+        //true || false -> true
+        //false || true -> true
+        //false || false -> false
+        var data=10>12 || 50>6;//true
+        var data=10>12 || 50==6;//false
+
+        // !true -> false
+        // !false -> true
+        var data=!(10<20);//false
+        var x=document.getElementById('para');
+        x.innerHTML=data;
+    </script>
+</html>

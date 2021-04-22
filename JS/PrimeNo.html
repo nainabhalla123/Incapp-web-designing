@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function prime(){
+                var x=document.getElementById("para");
+                var n=parseInt(document.getElementById("num").value);
+                var data="";
+                var flag=true;
+                for(var i=2;i<=n/2;i++){
+                    if(n%i==0){
+                        data=" Not Prime";
+                        flag=false;
+                        break;
+                    }
+                }
+                if(flag==true){
+                    data=" Prime";
+                }
+                x.innerHTML=n+data;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Find Prime Number</h1>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <button onclick="prime()">Find</button>
+        <p id='para'></p>
+    </body>
+    
+</html>

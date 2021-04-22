@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        
+        <script>
+            function f1(){
+                var x=document.getElementById("para");
+                x.innerHTML="hi incapp";
+            }
+            function f3(){
+                var x=document.getElementById("para");
+                x.innerHTML="bye incapp";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>focus Event example:</h1>
+        <input id='xyz1' type="text" onfocus="f1()" onblur="f3()" />
+        <p id="para"></p>
+    </body>
+</html>

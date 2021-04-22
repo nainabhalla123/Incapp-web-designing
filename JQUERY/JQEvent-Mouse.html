@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='jquery-3.5.1.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("div").mouseenter(function(){
+                    $(this).css(
+                    {"font-weight":"bold","color":"red"}
+                    );
+                    var a=$(this).find( "p" );
+                    a.text("I love JQUERY");
+                    a.css({"background-color":"green"});
+			    });
+                $("div").mouseleave(function(){
+                    $(this).css(
+                    {"font-weight":"none","color":"blue"}
+                    );
+                    var a=$(this).find( "p" );
+                    a.text("I love INDIA");
+                    a.css({"background-color":"yellow"});
+			    });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <div>
+            <p>Hello world.</p>
+            <h2>hi incapp</h2>
+        </div>
+        <div>
+            <p>Hello kkkkkk.</p>
+            <h2>hi rrrrrrrrrrrrrr</h2>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='jquery-3.5.1.min.js'></script>
+        <!-- <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> -->
+        <script>
+            $(document).ready(function(){
+                //way-1
+                // $("#i1").focus(function(){
+                //     $("#i1").css(
+                //         {"background-color":"yellow","color":"blue"}
+                //     );
+                // });
+                // $("#i1").focus(function(){
+                //     $("#i1").css(
+                //         {"background-color":"yellow","color":"blue"}
+                //     );
+                // });
+                //way-2 using 'this' keyword
+                $("input").focus(function(){
+                    $(this).css(
+                        {"background-color":"yellow","color":"blue"}
+                    );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id='h1'>Welcome to my website</h1>
+        <form action=''>
+            <label>First Name:</label>
+            <input id='i1' type='text' name='fname'/>
+            <label>Last Name:</label>
+            <input id='i2' type='text' name='lname'/>
+            <input type='submit' value='go'/>
+        </form>
+    </body>
+</html>

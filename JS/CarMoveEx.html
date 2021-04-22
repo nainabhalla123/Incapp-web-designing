@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+
+    <body>
+        <h1>Car Move example:</h1>
+        <img id='car' src="car.png" height="80px" />
+        <br/>
+        <button onclick="f1()">forward</button>
+        <button onclick="f2()">backword</button>
+        <button onclick="f3()">reset</button>
+    </body>
+    <script>
+        var x=document.getElementById('car');
+        x.style.position="relative";
+        var a=0;
+        function f1(){
+            //forward
+            if(a<=300){
+                a+=10;
+                x.style.left=a+"px";
+            }else{
+                alert("car can not move further.");
+            }
+        }
+        function f2(){
+            //backward
+            if(a>=0){
+                a-=10;
+                x.style.left=a+"px";
+            }else{
+                alert("car can not move further.");
+            }
+        }
+        function f3(){
+            //reset
+            a=0;
+            x.style.left=a+"px";
+        }
+    </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <script>
+            function f1(){
+                document.getElementById("para").innerHTML="I am Rahul Chauhan.";
+            }
+            function f2(){
+                document.write("Hi Incapp");
+            }
+            function f3(){
+                window.alert("Hi Incapp");//allowed
+                //alert("Hi Incapp");//allowed
+            }
+            function f4(){
+                window.print(); //allowed
+                //print(); //allowed
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to Page</h1>
+        <p id="para">This is my page.</p>
+        <button onclick="f1()">Button 1</button>
+        <button onclick="f2()">Button 2</button>
+        <button onclick="f3()">Button 3</button>
+        <button onclick="f4()">Button 4</button>
+    </body>
+    
+</html>

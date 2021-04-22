@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <style>
+            body{
+                margin: auto;
+                height: 1000px;
+            }
+            header{
+                background-color: lightgray;
+                padding: 10px;
+            }
+            header>p{
+                display: inline;
+                padding: 0 5px;
+            }
+            nav{
+                height: 48px;
+                background-color: lightblue;
+                position: sticky;
+                top: 0;
+            }
+            .logo{
+                float: left;
+                padding:10px;
+            }
+            .menu{
+                float: right;
+            }
+            .menu>ul{
+                list-style: none;
+            }
+            .menu>ul>li{
+                display: inline-block;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 15px 10px;
+            }
+            .menu a:hover{
+                background-color: tomato;
+            }
+
+            .dropdown-item{
+                width: max-content;
+                position: absolute;
+                right: 0px;
+                margin-top:14px;
+                display: none;
+            }
+            .dropdown-item a{
+                display: block;
+            }
+            .dropdown-item-list{
+                background-color: lightgreen;
+            }
+            .dropdown:hover .dropdown-item{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>Call US: 9898989898</p>
+            <p> | </p>
+            <p>Email US: xyz@gmail.com</p>
+        </header>
+        <nav>
+            <div class='logo'>
+                <img src="images/instagram.png" height="30px"/>
+            </div>
+            <div class='menu'>
+                <ul>
+                    <li><a href=''>Home</a></li>
+                    <li><a href=''>About</a></li>
+                    <li><a href=''>Contact</a></li>
+                    <li class="dropdown">
+                        <a href=''>Setting</a>
+                        <div class="dropdown-item">
+                            <div class='dropdown-item-list'>
+                                <a href=''>Logout</a>
+                                <a href=''>My Account</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <h1>Welcome to My Page</h1>
+            <hr>
+            <p>I love my INDIA.</p>
+            <p>I love INCAPP too.</p>
+        </main>
+    </body>
+</html>

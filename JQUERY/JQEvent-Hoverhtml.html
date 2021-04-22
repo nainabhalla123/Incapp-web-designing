@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='jquery-3.5.1.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("h1").hover(function(){
+                    $(this).css(
+					    {"font-weight":"bold","color":"red"}
+					);
+					$(this).text("I love JQUERY");
+                },function(){
+                    $(this).css(
+					    {"font-weight":"bold","color":"blue"}
+					);
+                    $(this).text("I love INDIA");
+                    
+                }
+                );
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <p>I am rahul.</p>
+    </body>
+</html>

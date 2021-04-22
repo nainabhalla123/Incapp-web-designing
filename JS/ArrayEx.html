@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Array example:</h1>
+        <p id='para'></p>
+    </body>
+    <script>
+        var x=document.getElementById("para");
+        //normal declaration
+        // var m1=89;
+        // var m2=68;
+        // var m3=98;
+        // var m4=78;
+        // var m5=45;
+        // x.innerHTML=m1+" "+m2+" "+m3+" "+m4+" "+m5;
+        
+        //array declaration
+        var m=[89,68,98,78,45,5,7,9,0];
+        //var m=[89,6.8,98,true,45,"rahul",7,9,0]; //allowed
+
+        //accessing array using index
+        //x.innerHTML=m[0]+" "+m[1]+" "+m[2]+" "+m[3]+" "+m[4];
+        
+        //accessing array using loop
+        var data="";
+        for(var y=0;y<m.length;y++){
+            data += m[y]+" ";
+        }
+        x.innerHTML=data;
+    </script>
+</html>

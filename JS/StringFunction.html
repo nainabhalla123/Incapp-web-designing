@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function f1(){
+                var x="I Love my INDIA";
+                var data=x.charAt(8);
+                var data=x.concat("rahul");
+                var data=x.indexOf("I");
+                var data=x.lastIndexOf("I");
+                var data=x.search("Love");
+                var data=x.replace("my","our");
+                var data=x.substr(2,4);
+                var data=x.substring(2,8);
+                var data=x.toLowerCase();
+                var data=x.toUpperCase();
+                var data=x.trim();
+                var data=x.split("I");
+                var y=document.getElementById("para");
+                y.innerHTML=data;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="f1()">Go</button>
+        <p id="para"></p>
+    </body>
+</html>

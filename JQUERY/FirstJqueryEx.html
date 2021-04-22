@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("div").slideUp(2000);
+                });
+                $("#b2").click(function(){
+                    $("div").slideDown(2000);
+                });
+                $("#b3").click(function(){
+                    $("div").slideToggle(2000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <button id="b1">button UP</button>
+        <button id="b2">button Down</button>
+        <button id="b3">button UP/Down</button>
+        <div>
+            <h2>Hello INCAPP</h2>
+            <p>Hi India</p>
+        </div>
+    </body>
+</html>

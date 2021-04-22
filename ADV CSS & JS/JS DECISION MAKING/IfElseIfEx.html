@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function ageOp(){
+                var a=document.getElementById("age");
+                var b=document.getElementById("para");
+                var c=parseInt(a.value);
+                if(c<0 || c>120){
+                    b.innerHTML="Please enter valid age";
+                }else if(c<=16){
+                    b.innerHTML="You are teenage";
+                }else if(c<=40){
+                    b.innerHTML="You are adult";
+                }else if(c<=80){
+                    b.innerHTML="You are oldage";
+                }else{
+                    b.innerHTML="You are very oldage";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Age App!</h1>
+        <input type="number" id="age" placeholder="Enter your Age"/>
+        <button onclick="ageOp()">Submit</button>
+        <p id='para'></p>
+    </body>
+</html>

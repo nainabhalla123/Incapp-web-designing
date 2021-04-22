@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <style>
+            p{
+                background-color: blue;
+                color: white;
+                width: max-content;
+                padding: 20px;
+            }
+            .xyz{
+                background-color: yellow;
+                color: green;
+                font-family: monospace;
+                border: 2px solid red;
+                width: max-content;
+            }
+        </style>
+        <script>
+            function f1(){
+                var y=document.getElementById('para');
+                y.className='xyz';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Change css example:</h1>
+        <p id='para'>I love my INDIA</p>
+        <button onclick="f1()">click me 1</button>
+    </body>
+</html>

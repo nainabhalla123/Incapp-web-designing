@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function f1(){
+                var x=document.getElementById("para");
+                //alert
+                window.alert("Hello INACPP");
+                //alert("Hello INACPP"); //window is optional
+
+                // confirm
+                // var a=confirm("Are u sure?");  
+                // if(a==true){
+                //     //alert("You pressed OK");
+                //     x.innerHTML="You pressed OK";
+                // }else{
+                //     //alert("You pressed Cancel");
+                //     x.innerHTML="You pressed Cancel";
+                // }
+
+                // prompt
+                // var a= prompt("Who are you?");  
+                // //alert("I am "+a); 
+                // x.innerHTML="I am "+a; 
+
+                // open
+                //open("http://www.incapp.in"); 
+
+                // close
+                // close(); 
+
+                // setTimeout
+                //setTimeout( hh,5000); 
+                //short-way
+                // setTimeout( function (){
+                //         alert("hello");
+                //     } ,5000);
+                
+                // setInterval without using function inside function call
+                //setInterval( hh,5000);
+                // setInterval using function inside function call
+                // setInterval( function(){
+                //     alert("hello");
+                // },5000);
+                
+            }
+            function hh(){
+                alert("hello");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Window methods example:</h1>
+        <button onclick="f1()">Click Me</button>
+        <p id='para'></p>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>JS ex</title>
+        <script>
+            function reverse(){
+                var x=document.getElementById("para");
+                var n=parseInt(document.getElementById("num").value);
+                var d=parseInt(n);
+                var data = "Reverse: ";
+                while(d!=0){
+                    data += d%10;
+                    d=parseInt(d/10);
+                }
+                x.innerHTML=data;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Reverse Number EXAMPLE</h1>
+        <input type="number" id="num" placeholder="Enter a number"/><br><br>
+        <button onclick="reverse()">GO</button>
+        <p id='para'></p>
+    </body>
+    
+</html>
